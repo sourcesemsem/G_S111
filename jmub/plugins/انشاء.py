@@ -7,12 +7,12 @@ from jmub import jmub
 @jmub.ar_cmd(pattern="انشاء ?(.*)")
 async def handle_creation_command(event):
     msg = event.text.split()
-    msg[1]
+    username = msg[1]
     chat = "@creationdatebot"
     response = await jmub.send_message("creationdatebot", f"/id {username}")
     async with event.client.conversation(chat) as conv:
         try:
-            await event.client.send_message(chat, "/id {username}")
+            await event.client.send_message(chat, "/id {reply_message}")
         except YouBlockedUserError:
             await event.reply(
                 f"يجب عليك الغاء حظر هذا البوت @creationdatebot اولا واعادة استخدام الامر"
