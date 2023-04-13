@@ -1,4 +1,5 @@
 from jmub import jmub
+from jmub.sql_helper.MOrakb import *
 
 from ..Config import Config
 
