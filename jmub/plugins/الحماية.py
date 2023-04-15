@@ -916,5 +916,5 @@ async def approve_p_m(event):
         event,
         APPROVED_PMs,
         file_name="قائمة الحماية جمثون.txt",
-        caption="قائمة المسموح لهم الحالية\n سورس كرستين \n @FTTUTY",
+        caption="قائمة المسموح لهم الحالية\n سورس سيمو \n @FTTUTY",
     )  # ترجمه وكتابة فريق جمثون
